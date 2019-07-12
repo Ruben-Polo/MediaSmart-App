@@ -29,19 +29,25 @@ export default class Member extends Component {
       return (
         <div className="container">
           {this.state.members.map((member,idx) => {
+            if(typeof member.image === "string" && typeof member.name === "string" && typeof member.age === "number") {
             return (
               <div key={idx} className="contact">
             <div className="contact-a">
-              <Link className="" to={'/member'} onClick={() => this.props.oneMember(member)}>
+              <Link to={'/member'} onClick={() => this.props.oneMember(member)}>
               <img className="member-pic" alt="" src={member.image}></img>
               </Link>
-              <p>{member.name}</p>  
-              </div>
+              <div className="name-p-container">
+              <p className="name-p">{member.name}</p> 
+              </div> 
+            </div>
               <div className="contact-b">
-               <p>{member.age} years old</p>
+               <p className="age-p">{member.age} years old</p>
               </div>
               </div>
             )
+            }else {
+              return
+            }
           })}
         </div>
       )

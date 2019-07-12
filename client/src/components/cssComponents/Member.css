@@ -2,6 +2,9 @@
   border: 1px solid black;
   max-width: 600px;
   margin: auto;
+  border: 3px solid #404040;
+  border-radius: 10px;
+  background-color: #BF9663;
 }
 
 .one-contact-a {
@@ -15,9 +18,24 @@
   display: flex;
   flex-direction: column;
   margin-left: 1vw;
+  text-align: left;
 }
 
 .bio-container {
-  margin: 5vh 3vh 3vh;
+  margin: 5vh 3vh 0 3vh;
   text-align: justify;
+}
+
+.close-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3vh;
+  margin-bottom: 3vh;
+}
+
+.close-button-container  button {
+  background-color: #D6C481;
+  font-size: 16px;
+  border-radius: 3px;
+  border-color: #404040;
 }

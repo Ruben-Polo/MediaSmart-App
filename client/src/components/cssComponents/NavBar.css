@@ -1,6 +1,5 @@
 .header{
-  height: 8vh;
-  background-color: #D6C481;
+  background-color: #262626;
   width: 100%;
   top:0;
   left:0;
@@ -18,4 +17,5 @@
 .members-title {
   font-family: "Montserrat",sans-serif;
   font-size: 2vh;
+  color: white;
 }

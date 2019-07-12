@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Api from './MembersApi'
 import './cssComponents/Member.css';
+import { Link } from "react-router-dom";
 
 export default class Member extends Component {
   constructor(props) {
@@ -26,6 +27,11 @@ export default class Member extends Component {
             <div className="bio-container">
              <p className="bio-p">Bio:</p>
              <p className="bio-p">{member.bio}</p>
+            </div>
+            <div className="close-button-container">
+              <Link to={'/'}>
+                <button>Close</button>
+              </Link>
             </div>
             </div>
     )

@@ -1,5 +1,4 @@
 .container {
-  border: 1px solid black;
   max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
@@ -10,22 +9,33 @@
   width: 350px;
   margin: auto;
   margin-top: 0;
-  border: 1px solid red;
+  border: 3px solid #404040;
+  border-radius: 10px;
+  background-color: #BF9663;
+  margin-bottom: 2vh;
 }
 
 .contact-a {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 }
 
 .contact-b {
   display: flex;
   align-items: flex-start;
-  margin-left: 3vw;
+  max-width: 90px;
 }
 .member-pic {
   max-width: 150px;
   border-radius: 50%;
   margin-left: 1vw;
+}
+.name-p-container {
+  margin-top: 3vh;
+}
+
+.name-p {
+  margin-top: 0;
+  text-align: center;
 }
