@@ -1,0 +1,21 @@
+.header{
+  height: 8vh;
+  background-color: #D6C481;
+  width: 100%;
+  top:0;
+  left:0;
+  position:fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mediasmart-logo {
+  max-width: 3wh;
+  height: 8vh;
+}
+
+.members-title {
+  font-family: "Montserrat",sans-serif;
+  font-size: 2vh;
+}

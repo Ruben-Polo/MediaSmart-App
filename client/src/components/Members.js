@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import './cssComponents/Members.css'
-import Api from './MembersApi'
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import './cssComponents/Members.css';
+import Api from './MembersApi';
 
 
 export default class Member extends Component {
@@ -29,21 +30,23 @@ export default class Member extends Component {
         <div className="container">
           {this.state.members.map((member,idx) => {
             return (
-              <div key={idx} className="contacto">
+              <div key={idx} className="contact">
             <div>
-              <img className="imagenes" alt="" src={member.image}></img>
+              <img className="member-pic" alt="" src={member.image}></img>
               </div>
               <p>{member.age}</p>
-              <p>{member.name}</p>
-              <p>{member.bio}</p>
-  
+              <p>{member.name}</p>  
               <div>
-              {/* <Link className="" to={`/candidate`} candidate={member}>{member.name}</Link> */}
+              <Link className="" to={`/member`}>
+                <button
+                  onClick={() => this.props.oneMember(member)}>
+                  {member.name}
+                </button>
+              </Link>
               </div>
               </div>
             )
-          })
-          }
+          })}
         </div>
       )
         }else{return<div>
