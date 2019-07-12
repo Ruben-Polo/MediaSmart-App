@@ -7,11 +7,25 @@
 }
 
 .contact {
-  width: 250px;
+  width: 350px;
   margin: auto;
   margin-top: 0;
+  border: 1px solid red;
 }
 
+.contact-a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-b {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 3vw;
+}
 .member-pic {
-  max-width: 250px;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-left: 1vw;
 }

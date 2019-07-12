@@ -1,0 +1,23 @@
+.one-contact-container { 
+  border: 1px solid black;
+  max-width: 600px;
+  margin: auto;
+}
+
+.one-contact-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+}
+
+.bio-container {
+  margin: 5vh 3vh 3vh;
+  text-align: justify;
+}

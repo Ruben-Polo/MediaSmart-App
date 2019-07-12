@@ -31,18 +31,14 @@ export default class Member extends Component {
           {this.state.members.map((member,idx) => {
             return (
               <div key={idx} className="contact">
-            <div>
+            <div className="contact-a">
+              <Link className="" to={'/member'} onClick={() => this.props.oneMember(member)}>
               <img className="member-pic" alt="" src={member.image}></img>
-              </div>
-              <p>{member.age}</p>
-              <p>{member.name}</p>  
-              <div>
-              <Link className="" to={`/member`}>
-                <button
-                  onClick={() => this.props.oneMember(member)}>
-                  {member.name}
-                </button>
               </Link>
+              <p>{member.name}</p>  
+              </div>
+              <div className="contact-b">
+               <p>{member.age} years old</p>
               </div>
               </div>
             )
