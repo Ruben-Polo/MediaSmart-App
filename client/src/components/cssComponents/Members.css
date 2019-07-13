@@ -16,26 +16,18 @@
 }
 
 .contact-a {
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  float: left;
+  margin-left: 1vw;
 }
 
-.contact-b {
-  display: flex;
-  align-items: flex-start;
-  max-width: 90px;
-}
 .member-pic {
   max-width: 150px;
   border-radius: 50%;
-  margin-left: 1vw;
+  margin-top: 2vh;
 }
 .name-p-container {
   margin-top: 3vh;
-}
-
-.name-p {
-  margin-top: 0;
   text-align: center;
 }
+
+

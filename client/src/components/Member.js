@@ -18,14 +18,14 @@ export default class Member extends Component {
     return (
             <div className="one-contact-container">
               <div className="one-contact-a">
-                <img className="member-pic" alt="funny-pic" src={member.image}></img>
+                <img className="one-member-pic" alt="funny-pic" src={member.image}></img>
                 <div className="contact-profile">
-                 <p>Name: {member.name}</p>
-                 <p>Age: {member.age}</p>
+                 <p className="name-text"><span className="span-profile">Name:</span> {member.name}</p>
+                 <p><span className="span-profile">Age:</span> {member.age}</p>
                 </div>
               </div>
             <div className="bio-container">
-             <p className="bio-p">Bio:</p>
+             <p className="bio-p"><span className="span-bio">Bio:</span></p>
              <p className="bio-p">{member.bio}</p>
             </div>
             <div className="close-button-container">
