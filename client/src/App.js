@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Members from './components/Members';
 import Member from './components/Member';
@@ -17,58 +17,37 @@ class App extends React.Component {
   }
 
 
-oneMember = person => {
-  this.setState({
-    ...this.state,
-    member: person
-  });
-}
+  oneMember = person => {
+    this.setState({
+      ...this.state,
+      member: person
+    });
+  }
 
-render() {
-  return (
-    <div className="App">
-      <div className="nav">
-        <NavBar></NavBar>
+  render() {
+    return (
+      <div className="App">
+        <div className="nav">
+          <NavBar></NavBar>
+        </div>
+
+        <Switch>
+          <Route
+            exact path="/" render={() => (
+              <Members
+                oneMember={member => this.oneMember(member)}
+              />
+            )}
+          />
+
+          <Route
+            exact path="/member"
+            render={() => <Member member={this.state.member} />}
+          />
+        </Switch>
       </div>
-
-      <Switch>
-        <Route
-          exact path="/" render={() => (
-            <Members
-              oneMember={member => this.oneMember(member)}
-            />
-          )}
-        />
-
-        <Route 
-          exact path="/member"
-          render={() => <Member member={this.state.member} />}
-        />
-      </Switch>
-    </div>
     )
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//      <Switch>
-//        <Route exact path='/' component={Members}></Route>
-//        <Route exact path="/:id" component={Member}></Route>
-//      </Switch>
-//     </div>
-//   );
-// }
 
 export default App;
