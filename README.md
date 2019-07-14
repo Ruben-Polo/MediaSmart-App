@@ -3,7 +3,7 @@
 
 This project consists of creating a complete App, using the database that appears in.
 
-The objective is to show employees in the Front, respecting the principles of responsive design
+The objective is to show employees in the Front, respecting the principles of responsive design.
 ## Table of Contents
 
 * [Instructions](#instructions)
